@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login to TuneHub</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/login.css}">
+</head>
+<body>
+	<div>
+		<form action="validate" method="post">
+	
+		<h2><u>LOGIN to go TUNEHUB</u></h2>
+		<br>
+		<label>Email:</label><br>
+		<input type="email" name="email" required>
+		<br><br>
+		
+		<label>Password:</label><br>
+		<input type="password" name="password" required>
+		<br><br><br>
+		<input class="submit" type="submit" value="LOGIN">
+		
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel=stylesheet type=text/css th:href="@{../login.css}">
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+</head>
+<body>
+    
+    <div>
+    
+    <form action="validate" method="post">
+    
+   
+    <h2>USER LOGIN</h2>
+    
+    <label>Email:</label>
+    <input type="email" name="email">
+    <br><br>
+    <label>Password:</label>
+    <input type="password" name="password">
+    <br><br>
+    
+    <input type="submit" value="LOGIN">
+    <button class="button">LOGIN</button>
+     
+    </form>
+    
+    </div>
+
+</body>
+</html> -->

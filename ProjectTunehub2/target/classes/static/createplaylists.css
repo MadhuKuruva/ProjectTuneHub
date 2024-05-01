@@ -1,0 +1,102 @@
+ body{
+	overflow: hidden;
+	background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	
+}
+form{
+	padding: 30px;
+	border: 2px solid black;
+	border-radius: 20px;
+	box-shadow: 2px 2px 5px black;
+	height: 150px;
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+}
+.one{
+	font-weight: bold;
+	
+}
+.onetwo{
+	background-color: #D9AFD9;
+background-image: -webkit-linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+background-image: -moz-linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+background-image: -o-linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+	
+}
+.two{
+	background-image: linear-gradient( 90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );
+	font-weight: normal;
+	border-radius: 15px;
+	width: 100%;
+	cursor: pointer;
+}
+.onetwo:hover {
+	
+	background-color: #ffffff;
+}
+.two:hover {
+/* 	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% ); */
+    font-weight: bold;
+    
+}
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+     background: linear-gradient(90deg, #433355, #3B2667, #BC78EC);
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,p{
+	text-align: center;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: calc(100% - 12px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #009FFF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left:130px ;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0080FF;
+    font-weight: bold;
+    font-size: 16px;
+} */

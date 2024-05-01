@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome To TUNEHUB</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/index.css}">
+</head>
+<body>
+	<header class="header">
+      <div class="left">
+        <div><a href="/images/tunehublogo.jpeg" target="_blank"><img class="logo" src="/images/tunehublogo.jpeg"></a></div>
+        <div class="name">TUNEHUB</div>
+      </div>
+      <div class="right">
+        <button class="signin"><a class="login1" href="login">SignIn</a> </button>
+        <button class="signup"><a class="register1" href="registration">SignUp</a></button>
+      </div>
+    </header>
+    
+    <div class="indexdiv">
+		<h1><span>Hey Buddy,</span> Welcome To TuneHub</h1>
+		<br>
+		<br>
+		
+        <a class="login" href="login">LOGIN</a> 
+		
+        <br/><br/>
+        <br/>
+      
+        <a class="register" href="registration">REGISTER</a>
+		
+    </div>
+</body>
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>INDEX PAGE</title>
+<link rel=stylesheet type=text/css th:href="@{../index.css}">
+</head>
+<body>
+    <div class="one">
+      
+     <form action="login">
+        <input class="login" type="submit" value="LOGIN">
+     </form>
+    <a href="login" >LOGIN</a>
+    <br><br>
+    <form action="registration">
+        <input type="submit" value="REGISTER">
+    </form>
+    <a href="registration">REGISTER</a>
+     
+    </div>
+  
+</body>
+</html>
+
+ -->

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel=stylesheet type=text/css th:href="@{../customer.css}">
+<head>
+<meta charset="UTF-8">
+<title>CUSTOMER PAGE</title>
+</head>
+<body>
+    
+    <div>
+    
+    
+    
+    <!-- <form action="playsongs">
+       <input type="submit" value="PLAY SONGS">
+    </form> -->
+    
+    <div th:unless="${ispremium}" class="non-premium" id="pre">
+    
+    <h2 class="header">Customer Home</h2>
+    
+    <p class="para">To Listen songs Buy Premium..!</p>
+    
+    <form action="pay">
+       <input id="ip" type="submit" value="GET PREMIUM">
+    </form>
+    <br><br>
+    
+    <form action="logout">
+       <input class="logout" type="submit" value="LOGOUT">
+    </form>
+    
+    </div>
+    
+    <div th:if="${ispremium}" class="premium" id="main">
+     
+     <h2><u> Welcome to TUNEHUB </u></h2>
+     
+     <p>Hey user here your songs!</p>
+    <p>Experience the joy of music like never before.</p>
+    
+      <table border="1">
+       <thead>
+         <tr>
+           <th>Name</th>
+           <th>Artist</th>
+           <th>Genre</th>
+           <th>Play</th>
+         </tr>
+         </thead>
+         <tbody>
+            <tr th:each="song:${songss}">
+              <td th:text="${song.name}"></td>
+              <td th:text="${song.artist}"></td>
+              <td th:text="${song.genre}"></td>
+              <td>
+                 <audio controls>
+                      <source th:src="${song.link}">
+                 </audio>
+              </td>
+            </tr>
+         </tbody>
+     
+     </table>
+     
+    </div>
+    
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Custome Home</title>
+<link rel="stylesheet" type="text/css" th:href="@{/customerhome.css}">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img class="logo" src="/images/tunehublogo.jpeg" alt="Logo">
+            <h1>TUNEHUB</h1>
+        </div>
+        <div>
+			<h1>Customer Home</h1>
+		</div>
+        <div class="right">
+            <form action="logout">
+                <input class="logout" type="submit" value="LOGOUT">
+            </form>
+        </div>
+    </header>
+    
+
+    <div th:unless="${ispremium}" class="non-premium">
+        <h1><u>Customer Home</u></h1>
+    	<br>
+        <p>To Listen songs Buy Premium</p>
+        
+        <form action="pay">
+            <input type="submit" value="GET PREMIUM">
+        </form>
+        <br><br>
+        <h4>NOTE:</h4>
+        <p>After becoming Premium User <br>To activate Premium Features go for Logout and Login again!!</p>
+        <br>
+        <form action="logout">
+            <input type="submit" value="LOGOUT">
+        </form>
+    </div>
+    
+    <div th:if="${ispremium}" class="premium">
+        <h1><u>Customer Home</u></h1>
+        <p>=> Start listening your favourite MUSIC.</p>
+        <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Artist</th>
+                        <th>Genre</th>
+                        <th>Play</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="s:${songs}">
+                        <td th:text="${s.name}"></td>
+                        <td th:text="${s.artist}"></td>
+                        <td th:text="${s.genre}"></td>
+                    
+                        <td>
+                            <audio controls>
+                                <source th:src="${s.link}">
+                            </audio>
+                         </td>
+                     
+                    </tr>
+                </tbody>
+        </table>
+        <br><br>
+        <form action="logout">
+            <input type="submit" value="LOGOUT">
+        </form>
+        
+    </div>
+    
+</body>
+</html> -->

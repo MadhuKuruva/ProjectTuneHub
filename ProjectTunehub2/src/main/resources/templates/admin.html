@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel=stylesheet type=text/css th:href="@{../admin.css}">
+<head>
+<meta charset="UTF-8">
+<title>ADMIN PAGE</title>
+</head>
+<body>
+
+     <div class="main">
+     
+    <h2 class="heading">Admin Dashboard</h2>
+    <p>Welcome to admin pannel.  Use the following options to manage your music collection:</p>
+    
+    <div class="sub">
+    <form action="newsong">
+        <input type="submit" value="ADD SONGS">
+    </form>
+    <br><br>
+    
+    <!-- <a href="newsong">ADD SONG</a> -->
+    
+    <form action="viewsongs">
+       <input type="submit" value="VIEW SONGS">
+    </form>
+    <br><br>
+    
+    <form action="createplaylists">
+       <input type="submit" value="CREATE PLAYLIST">
+    </form>
+    <br><br>
+    
+   
+    
+    <form action="viewplaylists">
+       <input type="submit" value="VIEW PLAYLISTS">
+    
+    </form>
+    
+    </div>
+    
+    </div>
+</body>
+</html>

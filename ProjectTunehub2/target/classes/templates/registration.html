@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel=stylesheet type=text/css th:href="@{../register.css}">
+<head>
+<meta charset="UTF-8">
+<title>REGISTER</title>
+</head>
+<body>
+
+     <form action="register" method="post">
+    <h2>Registration Page</h2>
+    
+    <label>Username:</label>
+    <input type="text" name="username">
+    <br><br>
+    <label>Email:</label>
+    <input type="email" name="email">
+    <br><br>
+    <label>Password:</label>
+    <input type="password" name="password">
+    <br><br>
+    <label>Gender:</label>
+    <label class="label">Male</label>
+    <input type="radio" name="gender" value="male">
+    <label class="label">Female</label>
+    <input type="radio" name="gender" value="female">
+    <label class="label">Other</label>
+    <input type="radio" name="gender" value="other">
+    <br><br>
+    <label>Role:</label>
+    <label class="label">Admin</label>
+    <input type="radio" name="role" value="admin"> 
+    <label class="label">customer</label>  
+    <input type="radio" name="role" value="customer">
+    <br><br>
+    <label>Address:</label>
+    <textarea type="address" name="address"></textarea>
+    <br><br>
+    
+    <input class="one" type="submit" value="SUBMIT">
+    </form>
+
+</body>
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Join TuneHub</title>
+<link rel="stylesheet" type="text/css" th:href="@{/registration.css}">
+</head>
+<body>
+	<div >
+		<h2><u>Create Your  Account</u></h2>
+		<br>
+	
+		<form action="register" method="post">
+		
+			<label>Name:</label><br>
+			<input type="text" name="username">
+			<br><br>
+			
+			<label>Email:</label><br>
+			<input type="email" name="email">
+			<br><br>
+			
+			<label>Password:</label><br>
+			<input type="password" name="password">
+			<br><br><br>
+			
+			<label>Gender:</label>
+			<input type="radio" name="gender" value="male">
+			<label class="radio">Male</label>
+			<input type="radio" name="gender" value="female">
+			<label class="radio">Female</label>
+			<input type="radio" name="gender" value="other">
+			<label class="radio">Other</label>
+			<br><br><br>
+			
+			<label>Role:</label>
+			<input type="radio" name="role" value="admin">
+			<label class="radio">Admin</label>
+			<input type="radio" name="role" value="customer">
+			<label class="radio">Customer</label>
+			<br><br><br>
+			
+			<label>Address:</label><br>
+			<textarea name="address"></textarea>
+			<br><br>
+			
+			<input class="submit" type="submit" value="REGISTER">
+		</form>
+	
+	</div>
+
+</body>
+</html>
+ -->
