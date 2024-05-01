@@ -1,0 +1,1 @@
+This is a TuneHub Full-Stack web Project by using Core-Java, JDBC, Spring MVC and Web Technologies. TuneHub is a music management system where users can perform registration, Login, Logout, AddingSongs, ViewSongs, Manage playlists, Buy premium, Enjoy their favorite tunes and etc..
